@@ -1,7 +1,7 @@
-FROM continuumio/miniconda3;
-WORKDIR /usr/local/app;
+FROM continuumio/miniconda3
+WORKDIR /usr/local/app
 
-ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/nuScenes-map-expansion-v1.3.zip nuScenes-map-expansion-v1.3.zip;
+ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/nuScenes-map-expansion-v1.3.zip nuScenes-map-expansion-v1.3.zip
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs.tgz v1.0-trainval01_blobs.tgz
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs_camera.tgz v1.0-trainval01_blobs_camera.tgz
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs_lidar.tgz v1.0-trainval01_blobs_lidar.tgz
