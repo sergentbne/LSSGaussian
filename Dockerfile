@@ -5,7 +5,7 @@ ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/nuScen
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs.tgz v1.0-trainval01_blobs.tgz
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs_camera.tgz v1.0-trainval01_blobs_camera.tgz
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs_lidar.tgz v1.0-trainval01_blobs_lidar.tgz
-ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs_radar.tgz v1.0-trainval01_blobs_radar.tgz
+# ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_blobs_radar.tgz v1.0-trainval01_blobs_radar.tgz
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval01_keyframes.tgz v1.0-trainval01_keyframes.tgz
 # ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval02_blobs.tgz v1.0-trainval02_blobs.tgz
 # ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval02_blobs_camera.tgz v1.0-trainval02_blobs_camera.tgz
@@ -54,8 +54,8 @@ ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-t
 # ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval10_keyframes.tgz v1.0-trainval10_keyframes.tgz
 ADD https://motional-nuscenes.s3-ap-northeast-1.amazonaws.com/public/v1.0/v1.0-trainval_meta.tgz v1.0-trainval_meta.tgz
 
-RUN conda install tar;
+RUN conda install tar git;
 
-RUN tar xvf *.tgz
+# RUN tar xvf *.tgz
 
 CMD []
